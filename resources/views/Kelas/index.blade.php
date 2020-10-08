@@ -1,12 +1,13 @@
 <html>
 	<head>
-		<title>Test</title>
+		<title>Data Kelas</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	</head>
 	<body>
-		<h1>Data Siswa</h1>
-		<a href="#">Tambah Data</a>
-		<table id="table" border="1" width="100%">
-			<thead>
+		<h1 style="margin-top:10px; text-align:center">Data Siswa</h1>
+		<a style="margin-left:5px" class="btn btn-primary" href="#" role="button">Tambah Data</a><br><br>
+		<table class="table table-hover" id="table" border="1" width="100%">
+			<thead class="table table-bordered thead-dark">
 				<tr>
 					<th>No. Absen</th>
 					<th>Nama</th>
