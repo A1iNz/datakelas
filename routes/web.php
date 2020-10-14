@@ -18,6 +18,10 @@ Route::get('/', function () {
 Route::group(['prefix' => 'Kelas'], function() {
 	Route::get('/', 'KelasController@index')->name('Kelas');
 	Route::get('/get', 'KelasController@get')->name('Kelas.get');
+	Route::post('/store', 'KelasController@store')->name('Kelas.store');
+	Route::get('/edit/{id?}', 'KelasController@edit')->name('Kelas.edit');
+	Route::get('/create', 'KelasController@create')->name('Kelas.create');
 	Route::get('/delete/{id?}', 'KelasController@delete')->name('Kelas.delete');
+	Route::post('/update/{id?}', 'KelasController@update')->name('Kelas.update');
 });
 

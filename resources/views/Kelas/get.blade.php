@@ -1,11 +1,11 @@
 @foreach($model as $row)
 	<tr>
-		<th>{!! $row->id !!}</th>
-		<th>{!! $row->Nama !!}</th>
-		<th>{!! $row->Kelas !!}</th>
-		<th>{!! $row->NIS !!}</th>
-		<th>
-			Edit | <a href="javascript:void(0)" onclick="destroy(<?= $row->id ?>)">Delete</a>						
-		</th>
+		<td>{!! $row->id !!}</td>
+		<td>{!! $row->nama !!}</td>
+		<td>{!! $row->kelas !!}</td>
+		<td>{!! $row->nis !!}</td>
+		<td>
+		<a href="javascript:void(0)" onclick="edit(<?= $row->id ?>)">Edit</a> | <a href="javascript:void(0)" onclick="destroy(<?= $row->id ?>)">Delete</a>						
+		</td>
 	</tr>
 @endforeach
